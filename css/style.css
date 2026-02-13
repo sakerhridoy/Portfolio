@@ -46,9 +46,8 @@ a {
   font-size: 21px;
   line-height: 27px;
   font-weight: 600;
-  padding: 18px 52px;
-  border-radius: 12px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 /* !<------Navbar CSS--------->*/
@@ -70,6 +69,9 @@ a {
 }
 .btns a {
   background-color: #fd6f00;
+  padding: 18px 52px;
+  border-radius: 12px;
+  display: inline-block;
   transition: ease-in-out 0.3s;
 }
 .btns a:hover {
@@ -83,8 +85,9 @@ a {
   padding-bottom: 70px;
 }
 .hero-right {
-  width: 486px;
-  height: 486px;
+  max-width: 486px;
+  width: 100%;
+  aspect-ratio: 1/1;
   background-image: linear-gradient(to bottom, #fdb565, #fd6f00);
   box-shadow: 10px 10px 20px rgba(167, 161, 161, 0.2);
   border: 15px solid #fd6f00;
@@ -141,7 +144,7 @@ a {
   left: 36px;
 }
 #about .img img {
-  width: 160%;
+  width: 100%;
 }
 .about-right h2 {
   font-size: 65px;
@@ -307,9 +310,11 @@ a {
   border: 2px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
-  width: 400px;
+  width: 100%;
+  max-width: 440px;
   height: 489px;
   background-color: #fd6f00;
+  margin: 0 auto;
 }
 .project-item:hover {
   border: 2px solid #fd6f00dd;
